@@ -2,7 +2,7 @@
 
 Private Repository for HW assignments of Stat 133 (Spring 2019)
 
-- Name: Joo Kim (first last)
+- Name: Joo Kim 
 - Github username: jh04023
 - Email: jh04023 [at] berkeley.edu
 - Lab section: 104
