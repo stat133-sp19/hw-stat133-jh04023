@@ -1,0 +1,99 @@
+---
+title: "warmup01-joo-kim.Rmd"
+author: "Joo Kim"
+date: "2019/1/31"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# **Star Wars**
+
+```{r}
+library(png)
+library(grid)
+img <- readPNG("/Users/kimjoohyun/Desktop/R/R2-D2.png")
+grid.raster(img)
+```
+
+##### A famous quote by R2-D2:
+
+> *"I sometimes think it's my destiny-to see things, to be present, to witness the galaxy moving, evolving. It happens to me over and over-bt even so, I can't see anything. And so, I like hearing the stories. Recording them."*
+
+<style>
+      p {line-height: 2em;}
+</style>
+
+##### Features of R2-D2
+
+```{r}
+library(data.table)
+des <- c("Species", "Gender", "Eye Color", "Skin Color")
+val <- c("Astromech Droid", "Masculine", "Unknown", "White")
+dt <- data.table(Description = des,
+                 Value = val)
+knitr::kable(dt)
+```
+
+***
+
+#**Cooking Recipe**
+##**Baked Buffalo Wings**#
+![image of baked buffalo wings](https://smittenkitchendotcom.files.wordpress.com/2019/01/oven-baked-buffalo-wings.jpg?w=1500)
+
+* **Ingredients**
+    + 1 tp 4 pounds chicken wings that have been cut into flats and drumettes
+    + 1 1/2 teaspoons to 2 tablespoons baking powder (using 1 1/2 teaspoons per pound)
+    + 1 to 4 teaspoons kosher salt (using 1 teaspoon per pound; use less salt if you're not using Diamond brand)
+    + 2 tablespoons hot sauce (Frank's RedHot is traditional) per pound of wings
+    + 1 1/2 to 2 tablespoons unsalted butter per pound of wings
+    + To serve (optional): Homemade Blue Cheese Dressing (below), plus celery and carrot sticks
+    
+
+* **"Special" Kitchen Tools**
+    + one or more large sheet trays
+    + backing sheet
+    + foil
+    + oven-safe cooling rack
+    + paper towel
+    
+##### Steps of the Recipe
+
+1. Line a large baking sheet with foil and set an oven-safe cooling rack on top.
+2. Pat wings dry with a paper towel, and then, in a large bowl, toss them with 1 1/2 teaspoons baking opwder and 1 teaspoon kosher salt *per pound of wings*, until thoroughly coated.
+3. Arrange them on the rack with some space between them (the surface will not dry and crisp as well where they touch) and place in your refrigerator uncovered for 8 to 24 hours.
+4. When you're ready to bake them, heat your oven to 450 degrees, with a rack set in the top half of your oven.
+5. Bake your wings for 20 minutes, flip them with tongs or a spatula, bake them for another 15 minutes, flip them back over again, and then for 15 final minutes, for a total roasting time of 50 minutes.
+6. Wings are donw with they are browned and crisp.
+7. In a medium saucepan, for each pound of wings, combine 2 tablespoons of hot sauce and 1 1/2 tablespoons (for a hotter sauce) to 2 tablespoons (for a mild, more buttery sauce) unsalted butter over medium heat until melted, whisking to combine.
+8. When wings are done, roll each in prepared Buffalo wing sauce.
+9. Serve with fixings of your choice.
+10. Eat immediately.
+
+##### Special Season of the Year
+
+There is no special season of the year for baked buffalo wings.
+
+##### Variation of the recipe
+
+* Cooking time will vary by the size of wingettes.
+* You can make blue chesse dressing for sauce.
+
+***
+
+# Euclidean Distance
+
+### Definition
+***
+The **Euclidean distance** between points **p** and **q** is the length of the line segment connecting them ($\overline{\textbf{pq}}$). In Cartesian coordinates, if **p** = (*p~1~*, *p~2~*,..., *p~n~*) and **q** = (*q~1~*, *q~2~*,..., *q~n~*) are two points in Euclidean n-space, then the distance (d) from **p** to **q**, or from **q** to **p** is given by the Pythagorean formula:
+$$\begin{align}
+d(\textbf{p}, \textbf{q}) = d(\textbf{q}, \textbf{p}) & = \sqrt{(q_1 - p_1)^2 + (q_2 - p_2)^2 + \cdots + (q_n - p_n)^2} \\
+& = \sqrt{\sum_{i=1}^n(q_i - p_i)^2}.
+\end{align}$$
+The position of a point in a Euclidean n-space is a Euclidean vector. So, **p** and **q** may be represented as Euclidean vectors, starting from the origin of the space (initial point) with their tips (terminal points) ending at the two points. the **Euclidean norm**, or **Euclidean length**, or **magnitude** of a vector measures the length of the vector:
+
+$\:\:\:\:\:\: \|\textbf{p}\| = \sqrt{p_1^2 + p_2^2 + \cdots + p_n^2} = \sqrt{\textbf{p} \ \cdot \textbf{p}}$
+
+where the last expression involves the dot product.
