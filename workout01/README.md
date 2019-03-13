@@ -1,2 +1,2 @@
 # Workout 01: GSW Shot Charts
-In this HW assignment, you manipulate data from 5 basketball players' performances. First, you make changes on and combine those data, and make shots charts make on them. Then, you create multiple tables of effecting shooting. Finally, you make a report by using what you have learned from the above process.
+In this HW assignment, you manipulate data from 5 GSW players' performances. First, you make changes on and combine those data, and make shots charts make on them. Then, you create multiple tables of effecting shooting. Finally, you make a report by using what you have learned from the above process.
