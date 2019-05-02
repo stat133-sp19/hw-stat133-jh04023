@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556704259570.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5B34A6AF",
+    "lastKnownWriteTime" : 1556677689,
+    "last_content_update" : 1556677689,
+    "path" : "~/binomial/R/bin_choose.R",
+    "project_path" : "R/bin_choose.R",
+    "properties" : {
+        "cursorPosition" : "16,3",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

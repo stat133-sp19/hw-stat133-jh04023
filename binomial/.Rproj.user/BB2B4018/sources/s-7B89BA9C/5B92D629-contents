@@ -1,0 +1,146 @@
+---
+title: "Binomial"
+author: "Joo Kim"
+date: "` r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Binomial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+library(binomial)
+```
+
+
+## Binomial
+
+The package '"binomial"' is an implemation for calculating binomial distribution given the number of trials, the number of successess, and the probability of success. It also visualizes binomial distribution.
+
+Let trials = 4, success = 3, and probabiliy = 0.5 for the future explanation
+```{r}
+trials <- 4
+success <- 3
+prob <- 0.5
+```
+
+
+## Choose Function
+
+Use the function 'bin_choose()' to get the calculated value trials choose success
+```{r}
+choose_val <- bin_choose(trials, success)
+choose_val
+```
+
+
+## Binomial Probability Function
+
+Use the function 'bin_probability()' to calculate the binomial_probability 
+```{r}
+bin_prob <- bin_probability(success, trials, prob)
+bin_prob
+```
+
+
+## Binomial Distribution Function
+
+Use the function 'bin_distribution()' to display the dataframe given the number of trials and the probability of success. The dataframe contains two columns: success, probability
+```{r}
+dis1 <- bin_distribution(trials = 5, prob = 0.5)
+dis1
+```
+
+You can create a barplot(successes vs. probability) using a dataframe created by the function 'bin_distribution()'
+```{r}
+plot(dis1)
+```
+
+
+## Binomial Cumulative Function
+
+Use the function 'bin_cumulative()' to display the dataframe given the number of trials and the probability of success. The dataframe contains three columns: success, probability, cumulative
+```{r}
+dis2 <- bin_cumulative(trials = 5, prob = 0.5)
+dis2
+```
+
+You can create a lineplot with dots (successes vs. cumulative probability) using a dataframe created by the created by the function 'bin_cumulative()'.
+
+
+## Binomial Variable Function
+
+The function 'bin_variable()' will print two parameters: number of trials, prob of success
+```{r}
+bin1 <- bin_variable(trials = 10, p = 0.3)
+bin1
+```
+
+
+When you use the summary function for the contents created from 'bin_variable()', it prints seven elements:
+- trials: number of trials
+- prob: probability of success
+- mean: mean or expected value
+- variance: variance
+- mode: mode
+- skewness: skewness
+- kurtosis: kurtosis
+
+```{r}
+binsum1 <- summary(bin1)
+binsum1
+```
+
+
+## Functions of measures
+
+### Mean
+
+The function 'bin_mean()' calculates the mean given by the number of trials and the probability of success.
+```{r}
+mean1 <- bin_mean(10, 0.3)
+mean1
+```
+
+
+### Variance
+
+The function 'bin_variance()' calculates the variance given by the number of trials and the probability of success.
+```{r}
+var1 <- bin_variance(10, 0.3)
+var1
+```
+
+
+### Mode
+
+The function 'bin_mode()' calculates the mode given by the number of trials and the probability of success.
+```{r}
+mode1 <- bin_mode(10, 0.3)
+mode1
+```
+
+
+### Skewness
+
+The function 'bin_skewness()' calculates the skewness given by the number of trials and the probability of success.
+```{r}
+skewness1 <- bin_skewness(10, 0.3)
+skewness1
+```
+
+
+### Kurtosis
+
+The function 'bin_kurtosis()' calculates the kurtosis given by the number of trials and the probability of success.
+```{r}
+kurt1 <- bin_kurtosis(10, 0.3)
+kurt1
+```
+
+
+
+
+

@@ -1,0 +1,88 @@
+---
+output:
+  github_document:
+    html_preview: false
+---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+
+# Overview
+
+'"binomial"' is a minimal package which provides functions related to binomial distribution.
+
+
+# Motivation
+
+The package has been made to explore how the R packages are made.
+
+
+# Usage
+
+## Choose Function
+
+Use the function 'bin_choose()' to get the calculated value trials choose success
+
+
+## Binomial Probability Function
+
+Use the function 'bin_probability()' to calculate the binomial_probability 
+
+
+## Binomial Distribution Function
+
+Use the function 'bin_distribution()' to display the dataframe given the number of trials and the probability of success. The dataframe contains two columns: success, probability
+
+You can create a barplot(successes vs. probability) using a dataframe created by the function 'bin_distribution()'
+
+
+## Binomial Cumulative Function
+
+Use the function 'bin_cumulative()' to display the dataframe given the number of trials and the probability of success. The dataframe contains three columns: success, probability, cumulative
+
+You can create a lineplot with dots (successes vs. cumulative probability) using a dataframe created by the created by the function 'bin_cumulative()'.
+
+
+## Binomial Variable Function
+
+The function 'bin_variable()' will print two parameters: number of trials, prob of success
+
+When you use the summary function for the contents created from 'bin_variable()', it prints seven elements:
+
+- trials: number of trials
+- prob: probability of success
+- mean: mean or expected value
+- variance: variance
+- mode: mode
+- skewness: skewness
+- kurtosis: kurtosis
+  
+
+## Functions of measures
+
+### Mean
+
+The function 'bin_mean()' calculates the mean given by the number of trials and the probability of success.
+
+### Variance
+
+The function 'bin_variance()' calculates the variance given by the number of trials and the probability of success.
+
+### Mode
+
+The function 'bin_mode()' calculates the mode given by the number of trials and the probability of success.
+
+### Skewness
+
+The function 'bin_skewness()' calculates the skewness given by the number of trials and the probability of success.
+
+### Kurtosis
+
+The function 'bin_kurtosis()' calculates the kurtosis given by the number of trials and the probability of success.
+

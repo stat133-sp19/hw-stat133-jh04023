@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556822195458.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "6024966",
+    "id" : "58AE2A3A",
+    "lastKnownWriteTime" : 1556821845,
+    "last_content_update" : 1556821845,
+    "path" : "~/binomial/inst/doc/introduction.Rmd",
+    "project_path" : "inst/doc/introduction.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 11,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
